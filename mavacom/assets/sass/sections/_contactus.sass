@@ -1,0 +1,85 @@
+.contactus_section
+    background: $primary-color
+    border-radius: 0px 60px 0px 0px
+    margin-bottom: -50px
+    margin-left: -25px
+    width: calc(100% + 50px)
+    .inner-wrap
+        margin-bottom: 100px
+    .section_two_columns
+        padding: 100px 50px
+        h2
+            margin-bottom: 15px
+            text-align: center
+            margin: 0 auto
+            margin-bottom: 50px
+        h4
+            text-align: center
+            line-height: $lh-4
+        .contactus_content
+            .contactus_content_item
+                margin-bottom: 25px
+                .about-content-img
+                    margin-right: 30px
+                    img
+                        width: 130px
+                        height: 130px
+                .about-content
+                    h4
+                        font-size: $f5
+                        line-height: $lh-5
+                        color: $base-color
+                        text-align: left
+                    span
+                        color: $base-color
+                        display: block
+                        margin-bottom: 15px
+                    ul
+                        +list-style
+                        margin-bottom: 0
+                        li
+                            line-height: 16px
+                            margin-bottom: 8px
+                            a
+                                font-size: $f6
+                                line-height: $lh-p
+                                text-decoration: none
+                                font-family: $link-fonts
+                                transition: 0.2s
+                                word-break: break-all
+                                &:hover
+                                    color: $seconday-light
+                                    transition: 0.2s
+                                i
+                                    color: $base-color
+                                    margin-right: 10px
+        .contactus_form
+            padding-left: 50px
+            .gfield
+                margin-bottom: 5px
+            .gform_title
+                display: none
+            .gform_button
+                padding: 8px 30px
+                background: $white-color
+                border-radius: 30px
+                color: $seconday-color
+                font-family: $inter-semiBold
+                margin: 0 auto
+                &:hover
+                    +btn-option-hover
+                    background: $seconday-color
+            input, textarea, select
+                border: 0
+                padding: 10px 20px !important
+                border-radius: 20px
+                font-size: 15px
+                color: #333
+                background: $white-color
+                font-family: Verdana, Tahoma, sans-serif
+            textarea
+                height: 100px !important
+            select
+                color: #333333a8
+                &::selection
+                    background: cyan

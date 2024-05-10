@@ -1,0 +1,115 @@
+.review_customer_section
+    position: relative
+    margin-bottom: 150px
+    .review_customer_info
+        margin-bottom: 100px
+        h2
+            font-size: 42px
+            line-height: 128.5%
+            color: #000000
+            margin-bottom: 50px
+    .review_customer_wrap
+        background: #FFAE10
+        border-radius: 0px 80px 80px 80px
+        padding: 0px 15vh 0px
+        position: relative
+        .review_item
+            padding: 40px
+            color: $base-color
+            position: relative
+            text-align: center
+            padding-left: 20px
+            .review_customer_thumbnail
+                width: 150px
+                height: 150px
+                border-radius: 50%
+                margin: 0 auto
+                display: block
+                margin-bottom: 10vh
+                object-fit: contain
+            .quot
+                font-size: 8em
+                font-family: $inter-semiBold
+                margin: 20px
+                display: block
+                position: relative
+                padding: 0
+                line-height: 0
+            .review_customer_content
+                font-size: $f5
+                line-height: $lh-5
+                margin-bottom: 50px
+            h4
+                font-size: $f5
+                line-height: $lh-5
+                font-weight: 400
+            .review_customer_company
+                font-size: $f6
+                line-height: $lh-p
+                font-family: $inter-semiBold
+                font-weight: 700
+    .tns-nav
+        text-align: center
+        position: relative
+        margin-top: 40px
+        button
+            margin: 10px
+            width: 16px
+            height: 16px
+            border: 0
+            border-radius: 50%
+        .tns-nav-active
+            top: -7px
+            position: relative
+            &::after
+                content: '\F309'
+                color: $base-color
+                display: block
+                font-family: bootstrap-icons
+                font-size: 70px
+                position: absolute
+                -webkit-transform: translateX(-47%)
+                transform: translateX(-47%)
+                -webkit-top: 16px
+                top: -1px
+    .tns-controls
+        button
+            border: 0
+            border-radius: 50%
+            font-size: 0
+            width: 40px
+            height: 40px
+            background: none
+        [data-controls=prev]
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 9
+            left: 5vh
+            border-radius: 50%
+            border: 1px solid #333
+            &::after
+                content: '\F284'
+                color: $base-color
+                display: block
+                font-family: bootstrap-icons
+                font-size: 19px
+                transform: translateY(-50%)
+        [data-controls=next]
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 9
+            right: 5vh
+            border-radius: 50%
+            border: 1px solid #333
+            &::after
+                content: '\F285'
+                color: $base-color
+                display: block
+                font-family: bootstrap-icons
+                font-size: 19px
+                transform: translateY(-50%)
+    [data-action=stop],
+    [data-action=start]
+        display: none !important

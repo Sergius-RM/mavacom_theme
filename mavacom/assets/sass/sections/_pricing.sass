@@ -1,0 +1,40 @@
+.pricing_section
+    margin-bottom: 100px
+    position: relative
+    .pricing_item
+        background: $light-color
+        border-radius: 0px 35px 35px 35px
+        margin-bottom: 35px
+        padding: 37px 30px 60px 30px
+        gap: 24px
+        color: $base-color
+        position: relative
+        .price_top
+            // height: 100%
+        .price_arrow
+            display: flex
+            justify-content: center
+            align-items: center
+            .spoiler_link
+                font-size: $h3-size
+                ont-weight: 900
+                cursor: pointer
+                transition: 0.2s
+            .spoiler_link.rotate
+                rotate: 90deg
+                transition: 0.2s
+        .price
+            width: 100%
+            font-weight: 400
+            font-family: $font-texts
+            justify-content: space-between
+            h3
+                font-weight: 400
+                font-size: 21px
+        .price_currency
+            font-size: $f1
+            font-family: $inter-semiBold
+            margin-bottom: 15px
+            line-height: normal
+        .price_content
+            display: none

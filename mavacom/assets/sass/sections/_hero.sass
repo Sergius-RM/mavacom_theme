@@ -1,0 +1,50 @@
+.hero-section
+    position: relative
+    margin-bottom: 50px
+    .hero-container
+        padding-top: 195px
+        padding-bottom: 235px
+        padding-left: 20vh
+        min-height: 780px
+        background: $primary-color
+        border-radius: 0px 0px 20vw 0px
+        h1
+            color: $base-color
+            font-weight: 700
+            font-size: 48px
+            max-width: 750px
+            margin-bottom: 20px
+        .hero-content
+            font-weight: 600
+            font-size: 18px
+            line-height: $lh-5
+            margin-bottom: 40px
+            max-width: 670px
+            p
+                color: $base-color
+                font-size: 18px
+                line-height: $lh-5
+                font-weight: 400
+        a
+            +link-light
+            font-style: normal
+            font-weight: 600
+            font-size: $f6
+            line-height: $lh-p
+        .read_more_link
+            display: inline-block
+            position: relative
+            +btn-option
+            color: $primary-color
+            background: $seconday-color
+            &:hover
+                +btn-option-hover
+                color: $seconday-color
+            &::after
+                font-family: bootstrap-icons
+                content: "\f138"
+                margin-left: 10px
+                top: 3px
+                position: relative
+            img
+                margin-left: 15px

@@ -1,0 +1,70 @@
+.quick_order_section
+    margin-top: 10vw
+    margin-bottom: 12vw
+    .section_two_columns
+        border-radius: 0px 0px 0px 60px
+        padding: 60px 0
+        position: relative
+        .quick_order_content
+            padding-left: 4vw
+            z-index: 1
+            h4
+                line-height: $lh-4
+            h2
+                margin-bottom: 20px
+            p
+                margin-bottom: 30px
+        .quick_order_image
+            // position: absolute
+            // width: 45%
+            // -webkit-transform: translateY(-50%)
+            // transform: translateY(-50%)
+            // right: 0
+            // z-index: 0
+            img
+                position: absolute
+                // width: 100%
+                // top: 0
+                transform: translateY(-50%)
+                right: -30vh
+                border-radius: 0px 60px 60px 60px
+    .section_two_columns.partial_fill
+        margin-right: 30vh
+    .light
+        background: $light-color
+    .orange
+        background: $primary-color
+        .cta_btn
+            background: $seconday-color
+            color: $primary-color
+            &:hover
+                background: $seconday-light
+                color: $primary-light
+
+    .container-fluid
+        .section_two_columns
+            .quick_order_content
+                padding-left: 8vw
+                p
+                    max-width: 80%
+            .quick_order_image
+                img
+                    right: 30vh
+
+.quick_order_section.swap_blocks
+    .section_two_columns
+        border-radius: 0px 0px 60px 0px
+    .section_two_columns.partial_fill
+        margin-left: 30vh
+        margin-right: 0
+    .quick_order_image
+        img
+            left: -30vh
+    .quick_order_content
+        order: 2
+        padding-left: 0
+        padding-right: 4vw
+    .container-fluid
+        .quick_order_image
+            img
+                right: 30vh

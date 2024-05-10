@@ -1,0 +1,96 @@
+.site-navigation
+    width: 100%
+    ul
+        margin-bottom: 0
+        position: relative
+        padding-left: 6rem
+        li
+            display: inline-block
+            padding: 10px 20px
+            position: relative
+            a
+                text-decoration: none
+                font-family: $inter-semiBold
+                padding-bottom: 5px
+                &:hover
+                    +link-hover
+                    color: $primary-color
+                    border-color: $primary-color
+
+.mob_menu
+    padding: 50px 0
+    line-height: $lh-2
+    .menu-main-menu-container
+        .menu
+            li
+                width: fit-content
+                position: relative
+                list-style: none
+                a
+                    text-decoration: none
+                    font-size: $f5
+                    &:hover
+                        color: $primary-dark
+
+
+.serice_menu
+    ul
+        padding: 0
+        margin: 0
+        text-align: right
+        text-align: -moz-right
+        text-align: -webkit-right
+    li
+        list-style: none
+        text-align: center
+        border-radius: 30px
+        width: max-content
+        a
+            text-decoration: none
+            padding: 10px 20px
+            transition: 0.2s
+            display: block
+            font-family: $inter-semiBold
+            &:hover
+                color: #FFAE10
+                transition: 0.2s
+                color: $base-color
+    .remote_support
+        border: 1px solid #FFAE10
+        margin-bottom: 10px
+        a
+            &::before
+                font-family: bootstrap-icons
+                content: "\f1D6"
+                margin-right: 10px
+                top: 2px
+                position: relative
+    .book_demo
+        background: #FFAE10
+        border: 1px solid #FFAE10
+        &:hover
+            +btn-option-hover
+            cursor: pointer
+        &:hover > a
+            color: $base-color
+        a
+            &::after
+                font-family: bootstrap-icons
+                content: "\f138"
+                margin-left: 10px
+                top: 3px
+                position: relative
+
+.pagination
+    margin-top: 30px
+    .nav-links
+        .page-numbers
+            color: #333
+            text-decoration: none
+            margin-right: 15px
+            font-size: 16px
+            &:hover
+                color: $primary-color
+            .current
+                color: $primary-color
+

@@ -1,0 +1,36 @@
+.posts_filter_section
+    margin-bottom: 50px
+    .blogrid_categories
+        list-style: none
+        padding: 0
+        li
+            display: contents
+            line-height: 60px
+            a
+                color: $base-color
+                font-size: $f6
+                line-height: $lh-p
+                border: 1px solid $base-color
+                border-radius: 20px
+                padding: 10px 25px
+                text-decoration: none
+                transition: 0.3s
+                display: inline-block
+                font-family: $inter-semiBold
+                margin-right: 30px
+                margin-bottom: 20px
+                &:hover
+                    transition: 0.2s
+                    border: 1px solid $primary-color
+            .children
+                padding: 0
+                display: inline
+
+        .current-cat
+            a
+                background: $base-color
+                color: $white-color
+                &:hover
+                    background: $primary-color
+                    color: $base-color
+                    transition: 0.2s

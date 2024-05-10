@@ -1,0 +1,223 @@
+.calculator_section
+    margin-bottom: 100px
+    background: $light-color
+    border-radius: 0px 35px 35px 35px
+    padding: 90px 0 75px 0
+    .gform_anchor form,
+    .gform_fields
+        position: relative
+    .calculator_item
+        max-width: 750px
+        h6
+            font-size: $f4
+            line-height: $lh-p
+        h2
+            line-height: $lh-2
+            margin-bottom: 30px
+        .calculator_form
+            label
+                margin-bottom: 20px
+            h4
+                margin-bottom: 20px
+            legend
+                font-size: 24px
+                line-height: 30px
+                margin-bottom: 20px
+            .noUi-handle
+                background: $primary-color
+                cursor: default !important
+                box-shadow: none !important
+                border-radius: 50%
+                width: 28px !important
+                height: 28px !important
+                cursor: pointer
+            .noUi-handle::before, .noUi-handle::after
+                display: none
+            .noUi-connect
+                background: none
+            .gform_wrapper.gravity-theme .gfield-choice-input + label
+                max-width: inherit !important
+            .gfield--type-html
+                text-align: left
+                h4, h3
+                    text-align: center
+                    margin: 20px 0
+            .gfield
+                margin-bottom: 5px
+            .gform_title
+                display: none
+            input, textarea, select
+                border: 0
+                padding: 10px 20px !important
+                border-radius: 20px
+                font-size: 15px
+                color: #333
+                background: $white-color
+                font-family: Verdana, Tahoma, sans-serif
+            textarea
+                height: 100px !important
+            select
+                color: #333333a8
+                border: 1px solid $grey-30
+                background: $grey-5
+                border-radius: 30px
+                padding: auto
+            .gfield_html
+                img
+                    display: block
+                    margin: 0 auto !important
+                    margin-bottom: 50px !important
+                    height: 250px
+                    object-fit: cover
+                ul
+                    column-count: 2
+            .gfield--type-nurslider
+                margin-top: 50px
+                margin-bottom: 50px
+                .ginput_container
+                    max-width: 400px
+                    margin: 0 auto
+            .gfield--type-email
+                margin: 50px auto
+                .ginput_container_email
+                    border: 1px solid #333
+                    max-width: 340px
+                    border-radius: 30px
+            .gf_progressbar_wrapper
+                display: none
+            .gform_button,
+            .gform_wrapper.gravity-theme .gform_previous_button.button, .gform_wrapper.gravity-theme .gform_save_link.button,
+            .gform_next_button
+                padding: 15px 30px !important
+                background: $primary-color
+                border-radius: 30px
+                color: $seconday-color
+                font-family: $inter-semiBold
+                margin: 30px auto
+                &:hover
+                    +btn-option-hover
+                    background: $seconday-color
+            .gform_wrapper.gravity-theme .gform_previous_button.button, .gform_wrapper.gravity-theme .gform_save_link.button
+                margin-right: 20px
+            .ginput_container_number
+                input
+                    background: none
+                    text-align: center
+                    color: $primary-color
+                    font-size: $f1
+                    font-family: $inter-semiBold
+            .gfield_calculation
+                margin-top: 30px
+                margin-bottom: 30px
+                label
+                    font-size: 28px
+                    font-family: $inter-semiBold
+            .gfield_checkbox
+                margin-bottom: 20px
+                div
+                    cursor: pointer
+                    border-radius: 30px
+                    border: 1px solid $primary-color
+                    margin: 0 auto
+                    margin-bottom: 20px
+                    margin-left: 10px
+                    margin-right: 10px
+                    display: inline-block
+                    font-weight: 700
+                    transition: 0.2s
+                    &:hover
+                        background: $btn-hover
+                        transition: 0.2s
+                    label
+                        cursor: pointer
+                        padding: 15px 25px 15px 25px
+                    input
+                        display: none
+                .checked
+                    background: $primary-light
+            // .gchoice_2_34_1, .gchoice_4_34_1
+            //     background: $primary-light !important
+            // .gchoice_2_34_1.checked, .gchoice_4_34_1.checked
+            //         background: none !important
+.aloitusmaksu
+    position: relative
+    .ginput_container_number::after
+        content: '+'
+        font-size: 48px
+        font-weight: 900
+        color: #ffae10
+        position: absolute
+        transform: translateY(100%)
+        line-height: 25px
+        left: 98%
+
+.billing_type
+    .gfield_radio
+        .gchoice
+            cursor: pointer
+            border-radius: 30px
+            border: 1px solid #ffae10
+            margin: 0 auto
+            margin-bottom: 20px
+            margin-left: 10px
+            margin-right: 10px
+            display: inline-block
+            font-weight: 700
+            &:hover
+                background: #ffcb65
+        label
+            padding: 15px 25px
+            cursor: pointer
+        input
+            display: none !important
+        .is_checked
+            background: #ffcb65
+
+.aloitusmaksu,
+.kuukausihinta
+    position: relative
+.aloitusmaksu .tooltip,
+.kuukausihinta .tooltip
+    border: 1px solid #333
+    cursor: pointer
+    position: absolute
+    transform: translateY(-120%)
+    width: 40px
+    height: 40px
+.aloitusmaksu .tooltip
+    left: 80%
+.kuukausihinta .tooltip
+    left: 90%
+
+.kuukausihinta.kuukausilasku .tooltip
+    left: 67%
+
+.gfield--type-number
+    label::after
+        content: '\F431'
+        font-family: bootstrap-icons
+        font-size: 18px
+        font-weight: 400
+        margin-left: 14px
+        cursor: pointer
+.aloitusmaksu-field,
+.kuukausihinta-field
+    background: #fff
+    border: 1px solid #ccc
+    padding: 20px 30px
+    border-radius: 30px
+    height: fit-content
+.gform_wrapper.gravity-theme .gform_fields,
+.gform_page_fields,
+.gform_page,
+.gform-body
+    position: relative
+.aloitusmaksu-field
+    position: relative
+    // transform: translateY(-100%)
+    margin-top: -130px
+.kuukausihinta-field
+    position: relative
+    // transform: translateY(-200%)
+    transform: translateX(100%)
+    margin-top: -130px
